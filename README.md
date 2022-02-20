@@ -28,8 +28,35 @@ The second deliverable sought to determine how many employees were eligible for 
 
 ## Summary 
 
-  #### - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+  #### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
  
 Based on Deliverable 1, 90,398 Pewlett Hackard employees are retirement eligible. If they all decide to retire, all 90,398 positions would need to be filled.
+
+  #### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+  
+Based on Deliverable 2, there are only 1,549 eligible employees that could be part of the mentorship program. On a 1-to-1 training basis, this would certainly not be enough to mentor all new hires and promotions.
+
+  #### Additional questions and views:
+  
+As mentioned before, while 90,398 retirement eligible employees is a large amount, what is that in comparison to the entire organization? The following table answers that very question.
+
+The following query joined the total employee table with the titles table, and then summarized the count of each title.
+
+![image](https://user-images.githubusercontent.com/70069730/154860554-155c779c-58bc-4886-9958-d9cc3a0d86f8.png)
+
+Then, using an INNER JOIN to the retiring_titles table, it compared the counts of the retiring titles to the total counts, and calculated the percentage. Below is the code and the resulting table.
+
+![image](https://user-images.githubusercontent.com/70069730/154860572-9b85e5bc-11b2-45e6-a2e0-1dd58fab43fc.png)
+
+![image](https://user-images.githubusercontent.com/70069730/154860591-af0f0fdb-7ffd-40c4-b19d-dbec4133f2f7.png)
+
+We see that in all cases, except for Manager, Pewlett Hackard could lose approximately 30% of its workforce. This would be devastating for their operations, and would require aggressive hiring.
+
+Second, I stated that a 1-to-1 Mentoring model would not be possible given the number of eligible mentors. The following code examined how many mentees would each mentor have if all vacancies from retirement-eligible employees needed to be filled and all mentorship-eligible employees agreed to mentor.
+
+![image](https://user-images.githubusercontent.com/70069730/154860603-5839858a-b605-4a2c-b09f-d4a489d58c2d.png)
+
+
+
 
 
