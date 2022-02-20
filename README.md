@@ -56,7 +56,19 @@ Second, I stated that a 1-to-1 Mentoring model would not be possible given the n
 
 ![image](https://user-images.githubusercontent.com/70069730/154860603-5839858a-b605-4a2c-b09f-d4a489d58c2d.png)
 
+![image](https://user-images.githubusercontent.com/70069730/154860623-0bf89fef-f330-4562-acc0-41a95ceba241.png)
 
+The table shows that Senior Staff and Senior Engineers would need to mentor significantly higher promoted employees than other titles.
+
+## Conclusion
+
+In summary, Pewlett Hackard should take the following points and recommendations from this analysis,
+
+- Approximately 30% of its workforce is retirement-eligible. If they all chose to retire, over 90,000 employees would leave.
+- Pewlett Hackard should begin working on an aggressive hiring plan to fill these vacancies, or determine if only a portion will be filled.
+- It does not have enough eligible mentors to adequetely advise new hires/promotions.
+- Even if Pewlett Hackard were to divide up the employees among the mentors, Senior Staff and Senior Engineers would have significantly larger loads.
+- As such, Pewlett Hackard may need to expand the age range of its mentorship program, or hire training staff to adequately mentor senior engineers and senior staff.
 
 
 
