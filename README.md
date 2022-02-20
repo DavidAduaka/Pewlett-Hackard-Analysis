@@ -1,17 +1,34 @@
-# Pewlett-Hackard-Analysis
+# Pewlett-Hackard-Analysis by David Aduaka
 
-## Challenge Overview
-Upon completion of his SQL queries and data he exported for his manager, Bobby recieved two more assingments from his manager: determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program. After the data is stored, Bobby and I will need to write a report that summarizes our analysis and helps prepare Bobby’s manager for the “silver tsunami” as many current employees reach retirement age. 
+## Overview of the Pewlett Hackard Analysis
+Pewlett Hackard is a large company with several thousand employees. With Baby-Boomers retiring, it has tasked its HR group to do two main tasks. First, it wants to know how many of its employees are retirement eligible. Second, it wants to know what positions will become vacant so that it can adequately plan to fill them in the future. Furthermore, I am to determine the number of retiring employees per title, and identify employees who are eligible to participate in a mentorship program.
 
 ## Resources 
-- Data Source: departments.csv, dept_emp.csv, dept_info.csv, dept_manager.csv, emp_info.csv, employees.csv, manager_info.csv, retirement_info.csv, retirement_titles.csv, salaries.csv, titles.csv     
-- Software: Anaconda 4.10.1, pgAdmin 4 5.2
+- Data Sources: employees.csv, departments.csv, titles.csv, salaries.csv, dept_emp.csv, dept_manager.csv
+- Software: PostGreSQL 11, pgAdmin 4, Visual Studio Code
 
 ## Results
-- The title that has the largest number of people who are going to retire is senior engineers. 
-- The title that has the third largest number of people who are going to retire is engineers. So one can say that an influx of assistant engineers is needed to combact this sliver tsunami, assumning all the assistant engineers that are eligble to mentored move into these vacant positions. 
-- The management department will have the easiet transition when its wave of employees retires. 
-- There are 1940 employees that are eligible for the mentorship program. 
+#### Deliverable 1: The Number of Retiring Employees by Title
 
-## Challenge Summary 
-As the "silver tsunami" begins to make an impact there are 90,398 roles that need to be filled. Pewlett Hackard hdoes not have enough employees that are eligible to mentored in for these roles. To combact this the company, a "unique_mentorship" table needs to be created to identifty the count of mentorship eligible employees for each title. Also the company needs to create a table called "tenure" and determine the minimum amount of years needed for a certain title to be able to mentor someone to fill their role in the foreseable future. For example after five years an engineer can mentor an assistant engineer on how to function in that role. 
+The first deliverable was to create tables that listed all employees who were retirement eligible, and then a final table that has the number of retirement-age employees by their most recent job title. This filtered the employees.csv by those born between 1952 and 1955, and joining it with the titles.csv to determine the employees' titles. By utilizing INNER JOIN, DISTINCT ON, ORDER BY, and COUNT(), I created the following list.
+
+![image](https://user-images.githubusercontent.com/70069730/154860298-ddfe7307-1595-4fc8-936e-992e3ca03338.png)
+
+The table shows that Pewlett Hackard has 29,414 Senior Engineers and 28,254 Senior Staff employees who are retirement eligible. In total, 90,398 employees could retire. But it begs a question; how much is that compared to Pewlett Hackard's entire workforce? This will be explored in the summary.
+
+#### Deliverable 2: The Employees Eligible for the Mentorship Program
+
+The second deliverable sought to determine how many employees were eligible for the Mentorship program. These were individual 10 years from retirement (aged 55) and could train and advise new hires/promoted employees in their functions. Again, I employed functions like INNER JOIN, DISTINCT ON, ORDER BY, and COUNT() on the Employees and Department Employees tables. The resulting Mentorship Eligibility Table was exported as a csv and is shown here. 1,549 would be eligible under the
+
+![image](https://user-images.githubusercontent.com/70069730/154860336-729af6d2-1757-4043-9736-1e0bcc28d568.png)
+
+1,549 Pewlett Hackard employees would be eligible under the current requirements of the Mentorship program. A pivot table of the csv shows that most of the eligible mentors were hired in 1999 and have 21 years in their title. On average, the eligible mentors have 27 years experience.
+
+![image](https://user-images.githubusercontent.com/70069730/154860352-c99e2130-662b-4ab9-a8d4-a96f5dd72005.png)
+
+## Summary 
+
+  - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+Based on Deliverable 1, 90,398 Pewlett Hackard employees are retirement eligible. If they all decide to retire, all 90,398 positions would need to be filled.
+
+
