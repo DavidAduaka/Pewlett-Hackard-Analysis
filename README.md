@@ -28,8 +28,8 @@ The second deliverable sought to determine how many employees were eligible for 
 
 ## Summary 
 
-  - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
-  - 
+  #### - How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+ 
 Based on Deliverable 1, 90,398 Pewlett Hackard employees are retirement eligible. If they all decide to retire, all 90,398 positions would need to be filled.
 
 
